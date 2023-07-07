@@ -1,0 +1,155 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+/* ----------------- */
+/* ----- Menu ------ */
+/* ----------------- */
+
+menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Hamburger and Logo */
+#menu-logo {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+#menu-logo .fa {
+    font-size: 23px;
+    line-height: 30px;
+}
+
+#logo {
+    width: 100px;
+}
+
+/* Search Bar */
+#searchbar-wrapper {
+    display: flex;
+    gap: 0;
+    width: 35%;
+}
+
+#searchbar {
+    border: solid 1px #d3d3d3;
+    border-right: none;
+    border-radius: 50px 0 0 50px;
+    padding: 0 4px 0 16px;
+    width: 100%;
+}
+
+#searchbar-submit {
+    width: 75px;
+    padding: 0 10px;
+    border-radius: 0 50px 50px 0;
+    border: solid 1px #d3d3d3;
+    background-color: #f8f8f8;
+}
+
+#searchbar-submit img {
+    width: 18px;
+}
+
+/* Profile Menu */
+#menu-profile {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#menu-profile img {
+    height: 30px;
+}
+
+#menu-profile a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #065fd4;
+    font-weight: 500;
+    text-decoration: none;
+    border: solid 1px #e5e5e5;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+#menu-profile a img {
+    height: 20px;
+}
+
+/* <div id="menu-profile">
+            
+<img src="assets/Menu Dots.svg" alt="menu dots">
+
+<a href="">
+    <img src="assets/Default Profile Pic.svg" alt="Default profile picture">
+    Sign In
+</a>
+
+</div> */
+
+/* ----------------- */
+/* ---- SideBar ---- */
+/* ----------------- */
+
+#sidebar {
+    width: 13%;
+}
+
+/* YouTube Page List */
+#youtube-page-list {
+    margin-top: 30px;
+    padding-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+
+#youtube-page-list a {
+    /* Layout */
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 15px;
+    border-radius: 10px;
+
+    /* Typography */
+    font-size: 14px;
+    line-height: 14px;
+    color: #0f0f0f;
+    text-decoration: none;
+}
+
+#youtube-page-list a img {
+    height: 25px;
+}
+
+.sidebar-active {
+    background-color: #0000001f;
+}
+
+
+/* -------------------- */
+/* -- Media Queries -- */
+/* ------------------- */
+
+/* Editor Responsiveness */
+@media screen and (max-width: 1100px) {
+
+    #sidebar {
+        width: 20%;
+    }
+
+    #searchbar-wrapper {
+        width: 45%;
+    }
+}
