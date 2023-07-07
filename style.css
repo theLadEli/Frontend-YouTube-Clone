@@ -2,6 +2,25 @@ body {
     font-family: 'Roboto', Arial, sans-serif;
 }
 
+/* h3 is used for video names */
+h3 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 22px;
+    
+}
+
+h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #606060;
+}
+
+p {
+    margin: 0;
+    color: #606060;
+}
 /* ----------------- */
 /* ----- Menu ------ */
 /* ----------------- */
@@ -84,17 +103,6 @@ menu {
     height: 20px;
 }
 
-/* <div id="menu-profile">
-            
-<img src="assets/Menu Dots.svg" alt="menu dots">
-
-<a href="">
-    <img src="assets/Default Profile Pic.svg" alt="Default profile picture">
-    Sign In
-</a>
-
-</div> */
-
 /* ----------------- */
 /* ---- SideBar ---- */
 /* ----------------- */
@@ -135,6 +143,63 @@ menu {
 
 .sidebar-active {
     background-color: #0000001f;
+}
+
+/* -------------------- */
+/* -- Main Column -- */
+/* ------------------- */
+
+#main-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+#main-column {
+    width: 100%;
+}
+
+#video-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.video-card {
+    width: 24%;
+}
+
+.video-thumbnail {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.video-meta-box {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: flex-start;
+
+}
+
+.video-channel-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.video-meta-data {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.video-meta-analytics {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
 }
 
 
