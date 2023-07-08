@@ -47,6 +47,11 @@ menu {
 }
 
 /* Search Bar */
+
+#mobile-searchbar-wrapper {
+    display: none;
+}
+
 #searchbar-wrapper {
     display: flex;
     gap: 0;
@@ -78,6 +83,10 @@ menu {
     display: flex;
     gap: 20px;
     align-items: center;
+}
+
+#mobile-profile {
+    display: none !important;
 }
 
 #menu-profile img {
@@ -220,17 +229,62 @@ menu {
 }
 
 /* Mobile Responsiveness */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
+
+    #sidebar {
+        display: none;
+    }
+
+    #searchbar-wrapper {
+        display: none;
+    }
+
+    #mobile-searchbar-wrapper {
+        display: block;
+    }
+
+    #launch-mobile-searchbar img {
+        width: 20px;
+    }
+
+    #launch-mobile-searchbar {
+        background: none;
+        border: none;
+    }
+
+    #desktop-profile {
+        display: none !important;
+    }
+
+    #mobile-profile {
+        display: block !important;
+        padding: 12px !important;
+    }
 
     #video-grid {
+        width: 100%;
+        align-items: center;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
 
     .video-card {
-        width: 80%;
+        width: 80% !important;
         padding: 30px;
     }
 
+}
+
+/* Video Grid Breakpoints */
+@media screen and (max-width: 1400px) {
+    .video-card {
+        width: 32%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .video-card {
+        width: 45%;
+    }
 }
