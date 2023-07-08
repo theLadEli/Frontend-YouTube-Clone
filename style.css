@@ -173,6 +173,7 @@ menu {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
+    row-gap: 35px;
 }
 
 .video-card {
@@ -267,6 +268,7 @@ menu {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        row-gap: 0px;
     }
 
     .video-card {
