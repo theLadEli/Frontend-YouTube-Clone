@@ -268,12 +268,15 @@ menu {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        row-gap: 0px;
+        row-gap: 20px;
     }
 
     .video-card {
-        width: 80% !important;
-        padding: 30px;
+        width: 90% !important;
+    }
+
+    .video-meta-box {
+        padding: 20px 4px !important;
     }
 
 }

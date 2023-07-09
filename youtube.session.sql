@@ -3,13 +3,14 @@
 -- @block
 CREATE TABLE videos (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    title TEXT,
+    title VARCHAR(100),
+    description VARCHAR(1000),
+    video_link TEXT,
     thumbnail TEXT,
     view_count INT,
     upload_date DATETIME,
     channel_id INT NOT NULL,
     
-    PRIMARY KEY (id),
     FOREIGN KEY (channel_id) REFERENCES channels(id)
 );
 
@@ -21,18 +22,18 @@ CREATE TABLE channels (
 );
 
 -- @block
-INSERT INTO videos (title, thumbnail, view_count, channel_id) VALUES (
-    'Test Video',
-    'assets/video/video-thumbnail-1',
-    3,
-    123
-),
-(
-    'New Video',
-    'assets/video/video-thumbnail-2',
-    30,
-    321
-);
+-- INSERT INTO videos (title, thumbnail, view_count, channel_id) VALUES (
+--     'Test Video',
+--     'assets/video/video-thumbnail-1',
+--     3,
+--     123
+-- ),
+-- (
+--     'New Video',
+--     'assets/video/video-thumbnail-2',
+--     30,
+--     321
+-- );
 
 -- @block
 SELECT * FROM videos;
