@@ -1,0 +1,403 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/YouTube Favicon.png">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body id="video-page">
+
+    <menu>
+
+        <div id="menu-logo">
+            <i class="fa fa-solid fa-bars"></i>
+            <a href="index.html">
+                <img src="assets/logo.png" alt="YouTube Logo" id="logo">
+            </a>
+        </div>
+
+        <div id="searchbar-wrapper">
+            <input type="text" placeholder="Search" id="searchbar">
+            <button id="searchbar-submit">
+                <img src="assets/Search.svg" alt="Searchbar magnifying glass icon">
+            </button>
+        </div>
+
+
+
+        <div id="menu-profile">
+            
+            <div id="mobile-searchbar-wrapper">
+                <button id="launch-mobile-searchbar">
+                    <img src="assets/mobile-search.svg" alt="Searchbar magnifying glass icon">
+                </button>
+            </div>
+
+            <img src="assets/Menu Dots.svg" alt="menu dots">
+
+            <a href=" " id="desktop-profile">
+                <img src="assets/Default Profile Pic.svg" alt="Default profile picture">
+                Sign in
+            </a>
+
+            <a href="" id="mobile-profile">
+                <img src="assets/Default Profile Pic.svg" alt="Default profile picture">
+            </a>
+
+        </div>
+        
+    </menu>
+
+
+
+    <div id="video-page-main">
+        
+        <div id="video-player">
+
+            <div id="selected-video-card">
+                <video src="videos/I'm a creep, lucifer.mp4" autoplay controls></video>
+                
+                <h2>Creep (feat. Tom Ellis)</h2>
+
+                <div class="video-meta-box">
+    
+                    <img src="videos/youtube-channel-logo.jpg" alt="" class="video-channel-logo">
+    
+                    <div id="channel-meta-data">
+                        
+                        <h5>Tom Ellis</h5>
+                        <h5 class="channel-subscribe-count">15.4M subscribers</h5>
+    
+                    </div>
+    
+                </div>
+
+            </div>
+
+            <div id="video-description-box" class="description-collapsed">
+
+                <div class="vid-description-meta-data">
+                    <p>1.8M views</p>
+                    <p>3 months ago</p>
+                </div>
+
+                <p id="video-description">
+                    Creep  (feat. Tom Ellis), a new song from the <span style="color:#065fd4">#OfficialSoundtrack</span> of Lucifer<br>
+                    <br>
+                    <span style="color:#065fd4">#Lucifer #Netflix</span><br>
+                    <br>
+                    Tracklist:<br>
+                    1. Sinnerman (feat. Tom Ellis)<br>
+                    2. Heart and Soul (feat.Tom Ellis & Lauren German)<br>
+                    3. All Along the Watchtower  (feat. Tom Ellis)<br>
+                    4. Eternal Flame  (feat. Tom Ellis)<br>
+                    5. Fever (feat. Lindsey Gort)<br>
+                    6. Luck Be a Lady  (feat. Tom Ellis)<br>
+                    7. I Will Survive (feat. Tom Ellis & Skye Townsend)<br>
+                    8. My Way  (feat. Tom Ellis)<br>
+                    9. Creep  (feat. Tom Ellis)<br>
+                    10. Wonderwall (feat. Lesley-Ann Brandt)<br>
+                    11. Someone to Watch Over Me (feat. Tom Ellis & Lesley Ann-Brandt<br>
+                    12. I Want to Be Evil (feat. Lesley Ann-Brandt)<br>
+                    13. Crime Solving Devil  (feat. Tom Ellis)<br>
+                    <br>
+                    About the Series: Lucifer <br>
+                    Based on characters created by Neil Gaiman, Sam Kieth and Mike Dringenberg, this series follows Lucifer, the original fallen angel, who has become dissatisfied with his life in hell. After abandoning his throne and retiring to Los Angeles, Lucifer indulges in his favorite things (women, wine and song) -- until a murder takes place outside of his upscale nightclub. For the first time in billions of years, the murder awakens something unfamiliar in Lucifer's soul that is eerily similar to compassion and sympathy. Lucifer is faced with another surprise when he meets an intriguing homicide detective named Chloe, who appears to possess an inherent goodness -- unlike the worst of humanity, to which he is accustomed. Suddenly, Lucifer starts to wonder if there is hope for his soul.
+                </p>
+
+                <button id="show-more" onclick="toggleDescription()">Show more</button>
+            </div>
+
+
+        </div>
+
+        <div id="suggested-videos">
+            
+            <div class="suggested-video-card">
+                <img src="videos/thumbnail.png" alt="" class="suggested-video-thumbnail">
+    
+                <div class="video-meta-data">
+                    <h3>Creep (feat. Tom Ellis)</h3>
+
+                    <div class="sv-meta-data-description">
+                        <h5>Tom Ellis</h5>
+
+                        <div class="video-meta-analytics">
+                            <h5 class="video-view-count">1.8M views</h5>
+                            <h5>•</h5>
+                            <h5 class="video-upload-date">3 months ago</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="suggested-video-card">
+                <img src="videos/thumbnail.png" alt="" class="suggested-video-thumbnail">
+    
+                <div class="video-meta-data">
+                    <h3>Creep (feat. Tom Ellis)</h3>
+
+                    <div class="sv-meta-data-description">
+                        <h5>Tom Ellis</h5>
+
+                        <div class="video-meta-analytics">
+                            <h5 class="video-view-count">1.8M views</h5>
+                            <h5>•</h5>
+                            <h5 class="video-upload-date">3 months ago</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="suggested-video-card">
+                <img src="videos/thumbnail.png" alt="" class="suggested-video-thumbnail">
+    
+                <div class="video-meta-data">
+                    <h3>Creep (feat. Tom Ellis)</h3>
+
+                    <div class="sv-meta-data-description">
+                        <h5>Tom Ellis</h5>
+
+                        <div class="video-meta-analytics">
+                            <h5 class="video-view-count">1.8M views</h5>
+                            <h5>•</h5>
+                            <h5 class="video-upload-date">3 months ago</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="suggested-video-card">
+                <img src="videos/thumbnail.png" alt="" class="suggested-video-thumbnail">
+    
+                <div class="video-meta-data">
+                    <h3>Creep (feat. Tom Ellis)</h3>
+
+                    <div class="sv-meta-data-description">
+                        <h5>Tom Ellis</h5>
+
+                        <div class="video-meta-analytics">
+                            <h5 class="video-view-count">1.8M views</h5>
+                            <h5>•</h5>
+                            <h5 class="video-upload-date">3 months ago</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="suggested-video-card">
+                <img src="videos/thumbnail.png" alt="" class="suggested-video-thumbnail">
+    
+                <div class="video-meta-data">
+                    <h3>Creep (feat. Tom Ellis)</h3>
+
+                    <div class="sv-meta-data-description">
+                        <h5>Tom Ellis</h5>
+
+                        <div class="video-meta-analytics">
+                            <h5 class="video-view-count">1.8M views</h5>
+                            <h5>•</h5>
+                            <h5 class="video-upload-date">3 months ago</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="suggested-video-card">
+                <img src="videos/thumbnail.png" alt="" class="suggested-video-thumbnail">
+    
+                <div class="video-meta-data">
+                    <h3>Creep (feat. Tom Ellis)</h3>
+
+                    <div class="sv-meta-data-description">
+                        <h5>Tom Ellis</h5>
+
+                        <div class="video-meta-analytics">
+                            <h5 class="video-view-count">1.8M views</h5>
+                            <h5>•</h5>
+                            <h5 class="video-upload-date">3 months ago</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="suggested-video-card">
+                <img src="videos/thumbnail.png" alt="" class="suggested-video-thumbnail">
+    
+                <div class="video-meta-data">
+                    <h3>Creep (feat. Tom Ellis)</h3>
+
+                    <div class="sv-meta-data-description">
+                        <h5>Tom Ellis</h5>
+
+                        <div class="video-meta-analytics">
+                            <h5 class="video-view-count">1.8M views</h5>
+                            <h5>•</h5>
+                            <h5 class="video-upload-date">3 months ago</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="suggested-video-card">
+                <img src="videos/thumbnail.png" alt="" class="suggested-video-thumbnail">
+    
+                <div class="video-meta-data">
+                    <h3>Creep (feat. Tom Ellis)</h3>
+
+                    <div class="sv-meta-data-description">
+                        <h5>Tom Ellis</h5>
+
+                        <div class="video-meta-analytics">
+                            <h5 class="video-view-count">1.8M views</h5>
+                            <h5>•</h5>
+                            <h5 class="video-upload-date">3 months ago</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="suggested-video-card">
+                <img src="videos/thumbnail.png" alt="" class="suggested-video-thumbnail">
+    
+                <div class="video-meta-data">
+                    <h3>Creep (feat. Tom Ellis)</h3>
+
+                    <div class="sv-meta-data-description">
+                        <h5>Tom Ellis</h5>
+
+                        <div class="video-meta-analytics">
+                            <h5 class="video-view-count">1.8M views</h5>
+                            <h5>•</h5>
+                            <h5 class="video-upload-date">3 months ago</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="suggested-video-card">
+                <img src="videos/thumbnail.png" alt="" class="suggested-video-thumbnail">
+    
+                <div class="video-meta-data">
+                    <h3>Creep (feat. Tom Ellis)</h3>
+
+                    <div class="sv-meta-data-description">
+                        <h5>Tom Ellis</h5>
+
+                        <div class="video-meta-analytics">
+                            <h5 class="video-view-count">1.8M views</h5>
+                            <h5>•</h5>
+                            <h5 class="video-upload-date">3 months ago</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="suggested-video-card">
+                <img src="videos/thumbnail.png" alt="" class="suggested-video-thumbnail">
+    
+                <div class="video-meta-data">
+                    <h3>Creep (feat. Tom Ellis)</h3>
+
+                    <div class="sv-meta-data-description">
+                        <h5>Tom Ellis</h5>
+
+                        <div class="video-meta-analytics">
+                            <h5 class="video-view-count">1.8M views</h5>
+                            <h5>•</h5>
+                            <h5 class="video-upload-date">3 months ago</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="suggested-video-card">
+                <img src="videos/thumbnail.png" alt="" class="suggested-video-thumbnail">
+    
+                <div class="video-meta-data">
+                    <h3>Creep (feat. Tom Ellis)</h3>
+
+                    <div class="sv-meta-data-description">
+                        <h5>Tom Ellis</h5>
+
+                        <div class="video-meta-analytics">
+                            <h5 class="video-view-count">1.8M views</h5>
+                            <h5>•</h5>
+                            <h5 class="video-upload-date">3 months ago</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="suggested-video-card">
+                <img src="videos/thumbnail.png" alt="" class="suggested-video-thumbnail">
+    
+                <div class="video-meta-data">
+                    <h3>Creep (feat. Tom Ellis)</h3>
+
+                    <div class="sv-meta-data-description">
+                        <h5>Tom Ellis</h5>
+
+                        <div class="video-meta-analytics">
+                            <h5 class="video-view-count">1.8M views</h5>
+                            <h5>•</h5>
+                            <h5 class="video-upload-date">3 months ago</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="suggested-video-card">
+                <img src="videos/thumbnail.png" alt="" class="suggested-video-thumbnail">
+    
+                <div class="video-meta-data">
+                    <h3>Creep (feat. Tom Ellis)</h3>
+
+                    <div class="sv-meta-data-description">
+                        <h5>Tom Ellis</h5>
+
+                        <div class="video-meta-analytics">
+                            <h5 class="video-view-count">1.8M views</h5>
+                            <h5>•</h5>
+                            <h5 class="video-upload-date">3 months ago</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="suggested-video-card">
+                <img src="videos/thumbnail.png" alt="" class="suggested-video-thumbnail">
+    
+                <div class="video-meta-data">
+                    <h3>Creep (feat. Tom Ellis)</h3>
+
+                    <div class="sv-meta-data-description">
+                        <h5>Tom Ellis</h5>
+
+                        <div class="video-meta-analytics">
+                            <h5 class="video-view-count">1.8M views</h5>
+                            <h5>•</h5>
+                            <h5 class="video-upload-date">3 months ago</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+        </div>
+
+
+
+    </div>
+
+<script src="script.js"></script>
+<!-- Font Awesome Link -->
+<script src="https://kit.fontawesome.com/638298b2c7.js" crossorigin="anonymous"></script>
+</body>
+</html>
