@@ -1,3 +1,5 @@
+// Description Expand Function
+
 var descriptionCollapsed = true;
 
 function toggleDescription() {
